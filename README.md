@@ -2,7 +2,7 @@
 
 This is my portfolio project for Microverse.
 
-![screenshot](/images/Screen_Shot.png)
+![screenshot](/images/screen_shot.png)
 
 
 ## Built With

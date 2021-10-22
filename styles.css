@@ -15,13 +15,20 @@ section {
   padding-top: 50px;
 }
 
-h2 {
+h1 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 70px;
   color: #1a2236;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-left: 16px;
+  /* width: 220px;
+  height: 100px; */
+}
+
+#geometry1 {
+  width: 111px;
+  height: 74px;
 }
 
 .hello {
@@ -32,16 +39,17 @@ h2 {
 }
 
 #menu {
-  margin-right: 9px;
+  margin-right: 16px;
+  padding-top: 19px;
 }
 
-#collab button {
+button {
   background-color: #1a2236;
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  width: 400px;
-  height: 70px;
+  width: 288px;
+  height: 50px;
   text-align: center;
   box-shadow: none;
   border: none;
@@ -53,5 +61,12 @@ h2 {
 }
 
 #geometry2 {
-  align-self: center;
+  align-self: stretch;
+  margin: 0;
+  width: 100%;
+}
+
+.parragraph {
+  margin-left: 16px;
+  margin-right: 16px;
 }

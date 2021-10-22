@@ -22,9 +22,6 @@ h1 {
   color: #1a2236;
   padding-bottom: 20px;
   padding-left: 16px;
-
-  /* width: 220px;
-  height: 100px; */
 }
 
 #geometry1 {
@@ -54,6 +51,12 @@ button {
   text-align: center;
   box-shadow: none;
   border: none;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #98dede;
+  color: white;
 }
 
 #collab {
@@ -70,4 +73,205 @@ button {
 .parragraph {
   margin-left: 16px;
   margin-right: 16px;
+}
+
+.works {
+  display: grid;
+  width: 100%;
+  height: auto;
+}
+
+.subtitle {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: #1a2236;
+  margin-bottom: 32px;
+  margin-left: 16px;
+}
+
+.laptop {
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: -5px;
+}
+
+.project {
+  background-color: #1a2236;
+  padding-left: 20px;
+  height: 156px;
+  margin-top: -5px;
+  padding-bottom: 200px;
+}
+
+.proj-name {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-top: 16px;
+}
+
+.tools {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+.tool {
+  background-color: #98dede;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 10.33px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  list-style-type: none;
+}
+
+.see-project {
+  display: flex;
+  border: solid 1px white;
+  width: 178px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+  height: 44px;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 12px;
+}
+
+.about {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+  color: #1a2236;
+  align-self: center;
+}
+
+.about p {
+  margin-bottom: 32px;
+  line-height: 21px;
+}
+
+#about-title {
+  margin-left: 0;
+  padding-bottom: 10px;
+}
+
+.cv {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #1a2236;
+  color: white;
+  width: 288px;
+  height: 50px;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+}
+
+.cv img {
+  padding-left: 15px;
+  width: 35px;
+}
+
+#getCV {
+  padding-left: 79px;
+  padding-right: 25px;
+}
+
+.skill-subtitle {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 21px;
+  margin-top: 50px;
+}
+
+.languages-list {
+  width: 289px;
+  height: 289px;
+  background-color: #1c528a;
+  background-image: url(images/gato.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 40px;
+  padding-left: 50px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+}
+
+.frameworks-list {
+  width: 289px;
+  height: 289px;
+  background-color: #e2505c;
+  background-image: url(images/ic_framework.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 40px;
+  padding-left: 50px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+}
+
+.skills-list {
+  width: 289px;
+  height: 289px;
+  background-color: #febf52;
+  background-image: url(images/ic_skills.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 40px;
+  padding-left: 50px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+}
+
+li {
+  position: relative;
+  left: 20px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-list li {
+  list-style-type: none;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.project-list .laptop {
+  margin-bottom: -5px;
 }

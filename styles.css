@@ -51,6 +51,12 @@ button {
   text-align: center;
   box-shadow: none;
   border: none;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #98dede;
+  color: white;
 }
 
 #collab {
@@ -103,14 +109,15 @@ button {
   color: white;
   font-weight: 300;
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 16px;
+  padding-top: 16px;
 }
 
 .tools {
   display: flex;
   margin-bottom: 20px;
-  margin-left: -20px;
+  margin-left: 0;
 }
 
 .tool {
@@ -251,4 +258,20 @@ button {
 li {
   position: relative;
   left: 20px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-list li {
+  list-style-type: none;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.project-list .laptop {
+  margin-bottom: -5px;
 }

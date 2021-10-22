@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 70px;
+  color: #1a2236;
+  padding-bottom: 20px;
+  padding-left: 16px;
+
+  /* width: 220px;
+  height: 100px; */
+}
+
+#geometry1 {
+  width: 111px;
+  height: 74px;
+}
+
+.hello {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#menu {
+  margin-right: 16px;
+  padding-top: 19px;
+}
+
+button {
+  background-color: #1a2236;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  width: 288px;
+  height: 50px;
+  text-align: center;
+  box-shadow: none;
+  border: none;
+}
+
+#collab {
+  padding-bottom: 50px;
+  align-self: center;
+}
+
+#geometry2 {
+  align-self: stretch;
+  margin: 0;
+  width: 100%;
+}
+
+.parragraph {
+  margin-left: 16px;
+  margin-right: 16px;
+}

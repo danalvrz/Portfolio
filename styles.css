@@ -87,9 +87,8 @@ button:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 50px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-
   margin-bottom: 32px;
   margin-left: 16px;
 }
@@ -121,7 +120,7 @@ button:hover {
 .tools {
   display: flex;
   margin-bottom: 20px;
-  margin-left: 0;
+  margin-left: -20px;
 }
 
 .tool {
@@ -262,6 +261,7 @@ button:hover {
 li {
   position: relative;
   left: 20px;
+  list-style-type: none;
 }
 
 .project-list {
@@ -269,8 +269,7 @@ li {
   flex-direction: column;
 }
 
-.project-list li {
-  list-style-type: none;
+.project-list .project {
   position: relative;
   left: 0;
   top: 0;
@@ -287,6 +286,7 @@ li {
   background-position: top left;
   padding-top: 106px;
 }
+
 .get-started p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -296,27 +296,23 @@ li {
   margin-bottom: 32px;
   color: #1a2236;
   align-self: center;
-  margin-bottom: 32px;
   line-height: 21px;
 }
 
 form {
-
   justify-items: center;
   align-self: center;
 }
 
 form li {
-  list-style-type: none;
   position: relative;
   left: 0;
   top: 0;
   margin-left: 18px;
   margin-right: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
   color: #1a2236;
   align-self: center;
-  margin-bottom: 8px;
   line-height: 21px;
 }
 
@@ -329,11 +325,9 @@ form label {
   font-style: normal;
   font-weight: 400;
   line-height: 15px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-  color: #7D7C84;
-
-
+  color: #7d7c84;
 }
 
 form input {
@@ -348,7 +342,7 @@ form input {
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   border-radius: 4px;
 }
@@ -369,6 +363,6 @@ textarea::-webkit-input-placeholder {
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }

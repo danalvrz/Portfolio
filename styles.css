@@ -300,6 +300,12 @@ li {
   line-height: 21px;
 }
 
+form {
+
+  justify-items: center;
+  align-self: center;
+}
+
 form li {
   list-style-type: none;
   position: relative;

@@ -366,3 +366,11 @@ textarea::-webkit-input-placeholder {
   letter-spacing: 0;
   text-align: left;
 }
+
+.project-list img {
+  transition: .4s;
+}
+
+.project-list img:hover {
+  transform: scale(1.1);
+}

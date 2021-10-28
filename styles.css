@@ -374,3 +374,15 @@ textarea::-webkit-input-placeholder {
 .project-list img:hover {
   transform: scale(1.1);
 }
+
+.get-started p {
+  transition: 1s;
+}
+
+.get-started p:hover {
+  transform: translate(10px);
+}
+
+.logo {
+  transform: rotate(360deg);
+}

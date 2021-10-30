@@ -533,8 +533,6 @@ textarea::-webkit-input-placeholder {
     padding-top: 3.1%;
   }
 
-
-
   .head-desktop {
     display: flex;
     justify-content: flex-end;
@@ -813,8 +811,6 @@ textarea::-webkit-input-placeholder {
     margin-top: 2%;
     margin-bottom: 5%;
   }
-
-
 
   form label {
     position: relative;

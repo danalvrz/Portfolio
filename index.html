@@ -21,16 +21,29 @@
   </head>
   <body>
     <header>
-      <img class="logo"
+      <img
+        class="logo"
         src="images/image_geometry_1.png"
         alt="geometry image"
         id="geometry1"
       />
       <nav>
         <img src="images/ic_menu.svg" alt="three recatngles" id="menu" />
+        <ul class="horizontal-menu">
+          <li><button id="hello-bttn">Hello</button></li>
+          <li><button id="portfolio-bttn">Portfolio</button></li>
+          <li><button>About</button></li>
+          <li><button>Contact</button></li>
+        </ul>
       </nav>
     </header>
-
+    <div class="head-desktop">
+      <img
+        src="images/image-geometry_1.png"
+        alt="geometry image"
+        id="geometry-desktop1"
+      />
+    </div>
     <section class="parragraph">
       <h1 id="dante">Dante <br />Álvarez</h1>
       <p class="hello">
@@ -49,179 +62,199 @@
       alt="geometry image"
       id="geometry2"
     />
-    <section class="works">
-      <h2 class="subtitle">Projects</h2>
+    <ul class="works project-list">
+      <h2 class="subtitle" id="Projects">Projects</h2>
+      <img src="images/image_dots.png" alt="dots" class="image_dots1" />
 
-      <ul class="project-list">
-        <img src="images/laptop1.png" alt="laptop" class="laptop" />
-        <li class="project">
-          <h3 class="proj-name">Project name goes here</h3>
-          <ul class="tools">
-            <li class="tool">HTML/CSS</li>
-            <li class="tool">Ruby on Rails</li>
-            <li class="tool">JavaScript</li>
-          </ul>
-          <button type="button" class="see-project">
-            See this project<img
-              src="images/arrow1.png"
-              alt="arrow"
-              class="arrow"
-            />
-          </button>
-        </li>
-        <img src="images/laptop2.png" alt="laptop" class="laptop" />
-
-        <li class="project">
-          <h3 class="proj-name">Project name goes here</h3>
-          <ul class="tools">
-            <li class="tool">HTML/CSS</li>
-            <li class="tool">Ruby on Rails</li>
-            <li class="tool">JavaScript</li>
-          </ul>
-          <button type="button" class="see-project">
-            See this project<img
-              src="images/arrow1.png"
-              alt="arrow"
-              class="arrow"
-            />
-          </button>
-        </li>
-        <img src="images/laptop3.png" alt="laptop" class="laptop" />
-
-        <li class="project">
-          <h3 class="proj-name">Project name goes here</h3>
-          <ul class="tools">
-            <li class="tool">HTML/CSS</li>
-            <li class="tool">Ruby on Rails</li>
-            <li class="tool">JavaScript</li>
-          </ul>
-          <button type="button" class="see-project">
-            See this project<img
-              src="images/arrow1.png"
-              alt="arrow"
-              class="arrow"
-            />
-          </button>
-        </li>
-        <img src="images/laptop4.png" alt="laptop" class="laptop" />
-
-        <li class="project">
-          <h3 class="proj-name">Project name goes here</h3>
-          <ul class="tools">
-            <li class="tool">HTML/CSS</li>
-            <li class="tool">Ruby on Rails</li>
-            <li class="tool">JavaScript</li>
-          </ul>
-          <button type="button" class="see-project">
-            See this project<img
-              src="images/arrow1.png"
-              alt="arrow"
-              class="arrow"
-            />
-          </button>
-        </li>
-        <img src="images/laptop5.png" alt="laptop" class="laptop" />
-
-        <li class="project">
-          <h3 class="proj-name">Project name goes here</h3>
-          <ul class="tools">
-            <li class="tool">HTML/CSS</li>
-            <li class="tool">Ruby on Rails</li>
-            <li class="tool">JavaScript</li>
-          </ul>
-          <button type="button" class="see-project">
-            See this project<img
-              src="images/arrow1.png"
-              alt="arrow"
-              class="arrow"
-            />
-          </button>
-        </li>
-        <img src="images/laptop6.png" alt="laptop" class="laptop" />
-
-        <li class="project">
-          <h3 class="proj-name">Project name goes here</h3>
-          <ul class="tools">
-            <li class="tool">HTML/CSS</li>
-            <li class="tool">Ruby on Rails</li>
-            <li class="tool">JavaScript</li>
-          </ul>
-          <button type="button" class="see-project">
-            See this project<img
-              src="images/arrow1.png"
-              alt="arrow"
-              class="arrow"
-            />
-          </button>
-        </li>
-      </ul>
-
-      <section class="about">
-        <h2 class="subtitle" id="about-title">About</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut excepturi
-          voluptates quidem culpa pariatur, mollitia consectetur nemo esse
-          voluptate, modi ullam labore deleniti! At dolore exercitationem a,
-          illo porro perspiciatis.
-        </p>
-
-        <button type="button" class="cv">
-          Get my CV <img src="images/ic_download.svg" alt="download-icon" />
+      <img src="images/laptop1.png" alt="laptop" class="laptop" id="laptop1" />
+      <li class="project" id="project1">
+        <h3 class="proj-name">Project name goes here</h3>
+        <ul class="tools">
+          <li class="tool">HTML/CSS</li>
+          <li class="tool">Ruby on Rails</li>
+          <li class="tool">JavaScript</li>
+        </ul>
+        <button type="button" class="see-project1">
+          See this project<img
+            src="images/Union.svg"
+            alt="arrow"
+            class="arrow"
+          />
         </button>
+      </li>
+      <img src="images/image-geometry_2.png" alt="geometry" id="geometry-projects"/>
+      <img src="images/laptop2.png" alt="laptop" class="laptop" id="laptop2"/>
 
-        <ul class="languages-list">
-          <h4 class="skill-subtitle">Languages</h4>
-          <li>JavaScript (ES5/ES6)</li>
-          <li>Ruby</li>
-          <li>HTML</li>
-          <li>CSS</li>
+      <li class="project" id="project2">
+        <h3 class="proj-name">Project name goes here</h3>
+        <ul class="tools">
+          <li class="tool">HTML/CSS</li>
+          <li class="tool">Ruby on Rails</li>
+          <li class="tool">JavaScript</li>
         </ul>
+        <button type="button" class="see-project2">
+          See this project<img
+            src="images/Union.svg"
+            alt="arrow"
+            class="arrow"
+          />
+        </button>
+      </li>
+      <img src="images/laptop3.png" alt="laptop" class="laptop" id="laptop3"/>
 
-        <ul class="frameworks-list">
-          <h4 class="skill-subtitle">Frameworks</h4>
-          <li>Bootstrap</li>
-          <li>Ruby on rails</li>
-          <li>RSpec</li>
-          <li>Capibara</li>
-          <li>Selenium</li>
+      <li class="project" id="project3">
+        <h3 class="proj-name">Project name goes here</h3>
+        <ul class="tools">
+          <li class="tool">HTML/CSS</li>
+          <li class="tool">Ruby on Rails</li>
+          <li class="tool">JavaScript</li>
         </ul>
+        <button type="button" class="see-project">
+          See this project<img
+            src="images/arrow1.png"
+            alt="arrow"
+            class="arrow"
+          />
+        </button>
+      </li>
+      <img src="images/laptop4.png" alt="laptop" class="laptop" id="laptop4" />
 
-        <ul class="skills-list">
-          <h4 class="skill-subtitle">Skills</h4>
-          <li>Codekit</li>
-          <li>Codepen</li>
-          <li>GitHub</li>
-          <li>GitLAb</li>
-          <li>Terminal</li>
+      <li class="project" id="project4">
+        <h3 class="proj-name">Project name goes here</h3>
+        <ul class="tools">
+          <li class="tool">HTML/CSS</li>
+          <li class="tool">Ruby on Rails</li>
+          <li class="tool">JavaScript</li>
         </ul>
-      </section>
-      <section class="get-started">
-        <h2 class="subtitle">Get Started</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur 
-          adipisicing elit. Suscipit fugiat quam consectetur. 
-          Distinctio officiis dolorem excepturi natus quod 
-          perferendis, explicabo, omnis provident deserunt 
-          laudantium odit earum commodi, neque dolor. Dolorum.</p>
-      
-      <form action="https://formspree.io/f/xoqyzbvj" method="post" class="form">
-      <ul>
-        <li>
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Name" maxlength="30" required>
-        </li>
-        <li>
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" placeholder="Email" required>
-        </li>
-        <li>
-          <textarea placeholder="Enter your message here..." maxlength="500" required></textarea>
-        </li>
-        <li>
-          <button type="submit">Start collaboration</button>
-        </li>
+        <button type="button" class="see-project">
+          See this project<img
+            src="images/arrow1.png"
+            alt="arrow"
+            class="arrow"
+          />
+        </button>
+      </li>
+      <img src="images/laptop5.png" alt="laptop" class="laptop" id="laptop5"/>
+
+      <li class="project" id="project5">
+        <h3 class="proj-name">Project name goes here</h3>
+        <ul class="tools">
+          <li class="tool">HTML/CSS</li>
+          <li class="tool">Ruby on Rails</li>
+          <li class="tool">JavaScript</li>
+        </ul>
+        <button type="button" class="see-project">
+          See this project<img
+            src="images/arrow1.png"
+            alt="arrow"
+            class="arrow"
+          />
+        </button>
+      </li>
+      <img src="images/laptop6.png" alt="laptop" class="laptop" id="laptop6"/>
+
+      <li class="project" id="project6">
+        <h3 class="proj-name">Project name goes here</h3>
+        <ul class="tools">
+          <li class="tool">HTML/CSS</li>
+          <li class="tool">Ruby on Rails</li>
+          <li class="tool">JavaScript</li>
+        </ul>
+        <button type="button" class="see-project">
+          See this project<img
+            src="images/arrow1.png"
+            alt="arrow"
+            class="arrow"
+          />
+        </button>
+      </li>
+      <img src="images/image-geometry_5.png" alt="geometry" id="geometry-projects2"/>
+      <img src="images/image-geometry_4.png" alt="geometry" id="geometry-projects3"/>
+    </ul>
+    <section class="about">
+      <h2 class="subtitle" id="about-title">About</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut excepturi
+        voluptates quidem culpa pariatur, mollitia consectetur nemo esse
+        voluptate, modi ullam labore deleniti! At dolore exercitationem a, illo
+        porro perspiciatis.
+      </p>
+
+      <button type="button" class="cv">
+        Get my CV <img src="images/ic_download.svg" alt="download-icon" />
+      </button>
+
+      <ul class="languages-list">
+        <h4 class="skill-subtitle">Languages</h4>
+        <li>JavaScript (ES5/ES6)</li>
+        <li>Ruby</li>
+        <li>HTML</li>
+        <li>CSS</li>
       </ul>
-      </form>
+
+      <ul class="frameworks-list">
+        <h4 class="skill-subtitle">Frameworks</h4>
+        <li>Bootstrap</li>
+        <li>Ruby on rails</li>
+        <li>RSpec</li>
+        <li>Capibara</li>
+        <li>Selenium</li>
+      </ul>
+
+      <ul class="skills-list">
+        <h4 class="skill-subtitle">Skills</h4>
+        <li>Codekit</li>
+        <li>Codepen</li>
+        <li>GitHub</li>
+        <li>GitLAb</li>
+        <li>Terminal</li>
+      </ul>
     </section>
+    <section class="get-started">
+      <h2 class="subtitle">Get Started</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+        fugiat quam consectetur. Distinctio officiis dolorem excepturi natus
+        quod perferendis, explicabo, omnis provident deserunt laudantium odit
+        earum commodi, neque dolor. Dolorum.
+      </p>
+
+      <form action="https://formspree.io/f/xoqyzbvj" method="post" class="form">
+        <ul>
+          <li class="name" >
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              maxlength="30"
+              required
+            />
+          </li>
+          <li class="email">
+            <label for="email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </li>
+          <li class="textarea">
+            <label for="textarea">Message</label>
+            <textarea
+              placeholder="Enter your message here..."
+              maxlength="500" 
+              required
+            ></textarea>
+          </li>
+          <li class="submit">
+            <button type="submit" id="submit" >Start collaboration</button>
+          </li>
+        </ul>
+      </form>
     </section>
   </body>
 </html>

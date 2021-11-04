@@ -19,6 +19,20 @@
     <link rel="stylesheet" href="styles.css" />
     <title>My Portfolio</title>
   </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-DF98NF67PW"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-DF98NF67PW");
+  </script>
   <body>
     <header>
       <img
@@ -29,7 +43,7 @@
       />
       <nav>
         <img src="images/ic_menu.svg" alt="three recatngles" id="menu" />
-        <ul class="horizontal-menu">
+        <ul class="horizontal-menu desktop">
           <li><button type="button" id="hello-bttn">Hello</button></li>
           <li><button type="button" id="portfolio-bttn">Portfolio</button></li>
           <li><button type="button">About</button></li>
@@ -37,7 +51,7 @@
         </ul>
       </nav>
     </header>
-    <div class="head-desktop">
+    <div class="head-desktop desktop">
       <img
         src="images/image-geometry_1.png"
         alt="geometry image"
@@ -157,7 +171,7 @@
         Get my CV <img src="images/ic_download.svg" alt="download-icon" />
       </button>
       <section class="languages-list">
-        <h4 class="skill-subtitle">Languages</h4>
+        <h3 class="skill-subtitle">Languages</h3>
         <ul>
           <li>JavaScript (ES5/ES6)</li>
           <li>Ruby</li>
@@ -166,7 +180,7 @@
         </ul>
       </section>
       <section class="frameworks-list">
-        <h4 class="skill-subtitle">Frameworks</h4>
+        <h3 class="skill-subtitle">Frameworks</h3>
         <ul>
           <li>Bootstrap</li>
           <li>Ruby on rails</li>
@@ -176,7 +190,7 @@
         </ul>
       </section>
       <section class="skills-list">
-        <h4 class="skill-subtitle">Skills</h4>
+        <h3 class="skill-subtitle">Skills</h3>
         <ul>
           <li>Codekit</li>
           <li>Codepen</li>

@@ -95,8 +95,19 @@ button:hover {
 }
 
 #collab {
-  padding-bottom: 50px;
   align-self: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 288px;
+  height: 70px;
+  background-color: #1a2236;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: none;
+  transition-duration: 0.4s;
+  border: solid 1px white;
 }
 
 #geometry2 {
@@ -563,10 +574,18 @@ textarea::-webkit-input-placeholder {
     margin-bottom: 50px;
     grid-template-columns: repeat(12, 8.33% [col-start]);
     grid-template-rows: repeat(12, 8.33% [row-start]);
-    background-image: url(images/image-geometry_3.png),
-      url(images/image-geometry_2.png), url(images/image_dots.png),
-      url(images/image-geometry_4.png), url(images/image-geometry_5.png);
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    background-image:
+      url(images/image-geometry_3.png),
+      url(images/image-geometry_2.png),
+      url(images/image_dots.png),
+      url(images/image-geometry_4.png),
+      url(images/image-geometry_5.png);
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
       no-repeat;
     background-position: 100% 76%, 49.95% 42.72%, 25% 49px, 52.7% 83.9%, 0 85.9%;
     background-size: 44.5%, 35.23%, 10%, 6%, 15%;
@@ -812,7 +831,9 @@ textarea::-webkit-input-placeholder {
   .get-started {
     background-image: url(images/image-geometry_6.png),
       url(images/image-geometry_7.png);
-    background-position: top left, bottom right;
+    background-position:
+      top left,
+      bottom right;
     background-size: 15%;
     height: 950px;
     margin-top: -10%;

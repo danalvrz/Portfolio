@@ -17,7 +17,40 @@ nav ul,
 #text-label {
   display: none;
 }
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  transform: translateY(0);
+  transition: transform 0.2s;
+  top: -50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: white;
+  color: #1a2236;
+  list-style: none;
+  padding-top: 4rem;
+}
+.hamburger-menu ul {
+  display: flex;
+  padding-top: 30%;
+  flex-direction: column;
+  text-align: center;
+}
+.hamburger-menu li {
+  color: #1a2236;
+  font-size: 6vw;
+  line-height: 14vw;
+  font-family: "Poppins", sans-serif;
+}
 
+.xIcon {
+  display: flex;
+  align-self: flex-end;
+  width: 30px;
+}
 section {
   display: flex;
   flex-direction: column;

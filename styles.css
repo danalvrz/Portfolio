@@ -18,12 +18,16 @@ nav ul,
   display: none;
 }
 .hamburger-menu {
+  background-image: url("images/image_geometry_menu_1.png"), url("images/image_geometry_menu_2.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 263px, 320px;
+  background-position: top left, bottom center;
   display: flex;
   flex-direction: column;
   position: fixed;
   transform: translateY(0);
   transition: transform 0.2s;
-  top: -50px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -31,8 +35,9 @@ nav ul,
   background-color: white;
   color: #1a2236;
   list-style: none;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
+
 .hamburger-menu ul {
   display: flex;
   padding-top: 30%;
@@ -46,10 +51,15 @@ nav ul,
   font-family: "Poppins", sans-serif;
 }
 
+.hamburger-menu a {
+  text-decoration: none;
+}
+
 .xIcon {
   display: flex;
   align-self: flex-end;
   width: 30px;
+  margin-right: 35px;
 }
 section {
   display: flex;

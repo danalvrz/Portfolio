@@ -51,13 +51,22 @@
           <li><button type="button">Contact</button></li>
         </ul>
       </nav>
+
       <div class="hamburger-menu">
-        <img src="images/Union-2.png" alt="x Icon" class="xIcon" />
+         <span class="xIcon"><img src="images/Union-2.png" alt="x Icon" /></span>
         <ul>
-          <li>Hello</li>
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
+          <a href="#dante">
+            <li>Hello</li>
+          </a>  
+          <a href="#portfolio">
+            <li>Portfolio</li>
+          </a>
+          <a href="#about-me">
+            <li>About</li>
+          </a>
+          <a href="#form">  
+            <li>Contact</li>
+          </a>  
         </ul>
       </div>
     </header>
@@ -84,7 +93,7 @@
       alt="geometry image"
       id="geometry2"
     />
-    <section class="works">
+    <section class="works" id="portfolio">
       <h2 class="subtitle" id="Projects">Projects</h2>
       <img src="images/laptop1.png" alt="laptop" class="laptop" id="laptop1" />
       <section class="project" id="project1">
@@ -168,7 +177,7 @@
         </button>
       </section>
     </section>
-    <section class="about">
+    <section class="about" id="about-me">
       <h2 class="subtitle" id="about-title">About</h2>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut excepturi
@@ -219,7 +228,7 @@
         earum commodi, neque dolor. Dolorum.
       </p>
 
-      <form action="https://formspree.io/f/xoqyzbvj" method="post" class="form">
+      <form action="https://formspree.io/f/xoqyzbvj" method="post" class="form" id="form">
         <ul>
           <li class="name">
             <label for="name">Your Name</label>

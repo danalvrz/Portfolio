@@ -1,6 +1,6 @@
 const menu = document.querySelector('.hamburger-menu');
-const ham = document.querySelector('.menu-ham');
-const xicon = document.querySelector('.xIcon');
+const hamb = document.querySelector('.hamb');
+const xIcon = document.querySelector('.xIcon');
 
 function toggleMenu(){
     if (menu.classList.contains('showMenu')){
@@ -12,6 +12,6 @@ function toggleMenu(){
     }
 }
 
-ham.addEventListener('click', toggleMenu);
+hamb.addEventListener('click', toggleMenu);
 
 const menuLinks = document.querySelectorAll('.menuLink');

@@ -17,6 +17,7 @@ nav ul,
 #text-label {
   display: none;
 }
+
 .hamburger-menu {
   background-image: url("images/image_geometry_menu_1.png"), url("images/image_geometry_menu_2.png");
   background-repeat: no-repeat, no-repeat;
@@ -25,7 +26,7 @@ nav ul,
   display: flex;
   flex-direction: column;
   position: fixed;
-  transform: translateY(-100%);
+  transform: translateY(100%);
   transition: transform 0.2s;
   top: 0;
   left: 0;
@@ -38,7 +39,7 @@ nav ul,
   padding-top: 2rem;
 }
 .showMenu {
-  transform: translateY(0);
+  transform: translateY(0%);
 }
 .hamburger-menu ul {
   display: flex;
@@ -63,6 +64,7 @@ nav ul,
   width: 3.5%;
   margin-right: 35px;
 }
+
 section {
   display: flex;
   flex-direction: column;

@@ -29,10 +29,6 @@ This is my portfolio project for Microverse.
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Special thanks to [@ivaan1992](https://github.com/ivaan1992) for all the help!
-
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.

@@ -3,20 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-DF98NF67PW"
-></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    window.dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DF98NF67PW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag("config", "G-DF98NF67PW");
-</script>
-    
+      gtag("config", "G-DF98NF67PW");
+    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,21 +32,21 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <title>My Portfolio</title>
-  </head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-DF98NF67PW"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      window.dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DF98NF67PW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag("config", "G-DF98NF67PW");
-  </script>
+      gtag("config", "G-DF98NF67PW");
+    </script>
+  </head>
   <body>
     <header>
       <img
@@ -57,13 +56,34 @@
         id="geometry1"
       />
       <nav>
-        <img src="images/ic_menu.svg" alt="three recatngles" id="menu" />
-        <ul class="horizontal-menu desktop">
-          <li><button type="button" id="hello-bttn">Hello</button></li>
-          <li><button type="button" id="portfolio-bttn">Portfolio</button></li>
-          <li><button type="button">About</button></li>
-          <li><button type="button">Contact</button></li>
-        </ul>
+        <div class="horizontal-menu desktop">
+          <ul class="horizontal-menu">
+            <li><button type="button" id="hello-bttn">Hello</button></li>
+            <li>
+              <button type="button" id="portfolio-bttn">Portfolio</button>
+            </li>
+            <li><button type="button">About</button></li>
+            <li><button type="button">Contact</button></li>
+          </ul>
+        </div>
+        <div class="hamburger-menu mobile">
+          <img
+            src="images/ic_menu.svg"
+            alt="hamburger menu"
+            id="hamburger-icon"
+          />
+          <div class="mobile-menu mobile">
+            <span class="xIcon"
+              ><img src="images/Union-2.svg" alt="x icon"
+            /></span>
+            <ul class="mobile">
+              <li><a href="#dante">Hello</a></li>
+              <li><a href="#portfolio"> Portfolio </a></li>
+              <li><a href="#about-me"> About </a></li>
+              <li><a href="#form"> Contact </a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <div class="head-desktop desktop">
@@ -89,7 +109,7 @@
       alt="geometry image"
       id="geometry2"
     />
-    <section class="works">
+    <section class="works" id="portfolio">
       <h2 class="subtitle" id="Projects">Projects</h2>
       <img src="images/laptop1.png" alt="laptop" class="laptop" id="laptop1" />
       <section class="project" id="project1">
@@ -99,12 +119,12 @@
           <li class="tool">Ruby on Rails</li>
           <li class="tool">JavaScript</li>
         </ul>
-        <button type="button" id="see-project1">
+        <button type="button" id="see-project1" class="see-project">
           See this project<img
-            src="images/Union.svg"
+            src="images/arrow1.png"
             alt="arrow"
-            class="arrow"
-          />
+            class="arrow mobile"
+          /><img src="images/Union.svg" alt="arrow" class="arrow desktop" />
         </button>
       </section>
       <img src="images/laptop2.png" alt="laptop" class="laptop" id="laptop2" />
@@ -115,12 +135,12 @@
           <li class="tool">Ruby on Rails</li>
           <li class="tool">JavaScript</li>
         </ul>
-        <button type="button" id="see-project2">
+        <button type="button" id="see-project2" class="see-project">
           See this project<img
-            src="images/Union.svg"
+            src="images/arrow1.png"
             alt="arrow"
-            class="arrow"
-          />
+            class="arrow mobile"
+          /><img src="images/Union.svg" alt="arrow" class="arrow desktop" />
         </button>
       </section>
       <img src="images/laptop3.png" alt="laptop" class="laptop" id="laptop3" />
@@ -131,12 +151,12 @@
           <li class="tool">Ruby on Rails</li>
           <li class="tool">JavaScript</li>
         </ul>
-        <button type="button" class="see-project3">
+        <button type="button" class="see-project">
           See this project<img
-            src="images/Union.svg"
+            src="images/arrow1.png"
             alt="arrow"
-            class="arrow"
-          />
+            class="arrow mobile"
+          /><img src="images/Union.svg" alt="arrow" class="arrow desktop" />
         </button>
       </section>
       <img src="images/laptop5.png" alt="laptop" class="laptop" id="laptop5" />
@@ -149,10 +169,10 @@
         </ul>
         <button type="button" class="see-project4">
           See this project<img
-            src="images/Union.svg"
+            src="images/arrow1.png"
             alt="arrow"
-            class="arrow"
-          />
+            class="arrow mobile"
+          /><img src="images/Union.svg" alt="arrow" class="arrow desktop" />
         </button>
       </section>
 
@@ -166,14 +186,14 @@
         </ul>
         <button type="button" class="see-project5">
           See this project<img
-            src="images/Union.svg"
+            src="images/arrow1.png"
             alt="arrow"
-            class="arrow"
-          />
+            class="arrow mobile"
+          /><img src="images/Union.svg" alt="arrow" class="arrow desktop" />
         </button>
       </section>
     </section>
-    <section class="about">
+    <section class="about" id="about-me">
       <h2 class="subtitle" id="about-title">About</h2>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut excepturi
@@ -224,7 +244,12 @@
         earum commodi, neque dolor. Dolorum.
       </p>
 
-      <form action="https://formspree.io/f/xoqyzbvj" method="post" class="form">
+      <form
+        action="https://formspree.io/f/xoqyzbvj"
+        method="post"
+        class="form"
+        id="form"
+      >
         <ul>
           <li class="name">
             <label for="name">Your Name</label>
@@ -262,5 +287,6 @@
         </ul>
       </form>
     </section>
+    <script type="text/javascript" src="javascript.js"></script>
   </body>
 </html>

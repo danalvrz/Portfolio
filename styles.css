@@ -901,9 +901,7 @@ textarea::-webkit-input-placeholder {
     background-image:
       url(images/image-geometry_6.png),
       url(images/image-geometry_7.png);
-    background-position: 
-      top left, 
-      bottom right;
+    background-position: top left, bottom right;
     background-size: 15%;
     height: 100%;
     margin-top: -10%;

@@ -13,3 +13,25 @@ function toggleMenu() {
 }
 
 ham.addEventListener('click', toggleMenu);
+
+const bttn = document.querySelector('.see-project');
+const modal = document.querySelector('.modal');
+const closeX = document.querySelector('.closeX');
+
+bttn.onclick = function showModal() {
+  modal.style.display = 'block';
+};
+closeX.onclick = function hideModal() {
+  modal.style.display = 'none';
+};
+
+const modalInfo = [
+  {
+    name: 'Project Name Uno',
+    description: 'Description blabla',
+    preview: 'images/Group 109.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    linkLive: 'https://github.com/danalvrz/Portfolio',
+    linkSource: 'https://github.com/danalvrz/Portfolio',
+  },
+];

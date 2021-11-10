@@ -58,12 +58,10 @@
       <nav>
         <div class="horizontal-menu desktop">
           <ul class="horizontal-menu">
-            <li><button type="button" id="hello-bttn">Hello</button></li>
-            <li>
-              <button type="button" id="portfolio-bttn">Portfolio</button>
-            </li>
-            <li><button type="button">About</button></li>
-            <li><button type="button">Contact</button></li>
+            <li><a href="#parragraph" id="hello-bttn">Hello</a></li>
+            <li><a href="#portfolio" id="portfolio-bttn"> Portfolio </a></li>
+            <li><a href="#about-me"> About </a></li>
+            <li><a href="#form"> Contact </a></li>
           </ul>
         </div>
         <div class="hamburger-menu mobile">
@@ -93,7 +91,7 @@
         id="geometry-desktop1"
       />
     </div>
-    <section class="parragraph">
+    <section class="parragraph" id="parragraph">
       <h1 id="dante">Dante <br />Álvarez</h1>
       <p class="hello">
         Hello! I am a software developer! I can help you build a product,
@@ -127,6 +125,43 @@
           /><img src="images/Union.svg" alt="arrow" class="arrow desktop" />
         </button>
       </section>
+
+      <!-- The Modal -->
+      <section id="myModal" class="modal">
+
+        <!-- Modal Content-->
+        <span class="closeX modalClose"
+          ><img src="images/Union-2.svg" alt="x icon"
+        /></span>
+        <div class="modal-content">
+          <h3 class="proj-name nameModal mobile"></h3>
+          <ul class="tools mobile">
+            <li class="tool techModal mobile"></li>
+            <li class="tool techModal mobile"></li>
+            <li class="tool techModal mobile"></li>
+          </ul>
+          <img class="modalPreview" src="#" alt="project preview" />
+          <p class="descripModal"></p>
+          
+          <!-- <div class="modal-buttons">
+            <button type="button" class="see-live">
+              See live<img
+                src="images/ic_link.svg"
+                alt="live icon"
+                class="live mobile"
+              /><img src="images/Union.svg" alt="arrow" class="arrow desktop" />
+            </button>
+            <button type="button" class="see-source">
+              See source<img
+                src="images/github.svg"
+                alt="github icon"
+                class="source mobile"
+              /><img src="images/Union.svg" alt="arrow" class="arrow desktop" />
+            </button> -->
+          </div>
+        </div>
+      </section>
+      <!-- End of Modal -->
       <img src="images/laptop2.png" alt="laptop" class="laptop" id="laptop2" />
       <section class="project" id="project2">
         <h3 class="proj-name">Project name goes here</h3>
@@ -167,7 +202,7 @@
           <li class="tool">Ruby on Rails</li>
           <li class="tool">JavaScript</li>
         </ul>
-        <button type="button" class="see-project4">
+        <button type="button" class="see-project4 see-project">
           See this project<img
             src="images/arrow1.png"
             alt="arrow"
@@ -184,7 +219,24 @@
           <li class="tool">Ruby on Rails</li>
           <li class="tool">JavaScript</li>
         </ul>
-        <button type="button" class="see-project5">
+        <button type="button" class="see-project5 see-project">
+          See this project<img
+            src="images/arrow1.png"
+            alt="arrow"
+            class="arrow mobile"
+          /><img src="images/Union.svg" alt="arrow" class="arrow desktop" />
+        </button>
+      </section>
+
+      <img src="images/laptop6.png" alt="laptop" class="laptop" id="laptop6" />
+      <section class="project mobile" id="project6">
+        <h3 class="proj-name">Project name goes here</h3>
+        <ul class="tools">
+          <li class="tool">HTML/CSS</li>
+          <li class="tool">Ruby on Rails</li>
+          <li class="tool">JavaScript</li>
+        </ul>
+        <button type="button" class="see-project6 see-project">
           See this project<img
             src="images/arrow1.png"
             alt="arrow"

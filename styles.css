@@ -20,7 +20,8 @@ header {
 
 .mobile-menu {
   width: 100%;
-  background-image: url("images/image_geometry_menu_1.png"),
+  background-image:
+    url("images/image_geometry_menu_1.png"),
     url("images/image_geometry_menu_2.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 80%, 100%;
@@ -214,7 +215,7 @@ button:hover {
   font-style: normal;
   font-weight: 300;
   line-height: 100%;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -230,7 +231,7 @@ button:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   padding-top: 5%;
 }
@@ -276,7 +277,7 @@ button:hover {
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #1a2236;
   padding-bottom: 3%;
@@ -291,6 +292,7 @@ button:hover {
   width: 100%;
   height: auto;
   margin-top: 40px;
+  padding-top: 0;
 }
 
 .subtitle {
@@ -609,9 +611,6 @@ textarea::-webkit-input-placeholder {
   transform: scale(1.01);
 }
 
-.works {
-  padding-top: 0;
-}
 #email-error {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -622,6 +621,7 @@ textarea::-webkit-input-placeholder {
   position: absolute;
   text-align: center;
 }
+
 .submit {
   padding-bottom: 10%;
   margin-top: 10%;
@@ -664,6 +664,14 @@ textarea::-webkit-input-placeholder {
     width: 79%;
     justify-content: center;
     margin-left: 12%;
+  }
+
+  .techModal {
+    margin-left: -3%;
+  }
+
+  .techModal li {
+    font-size: 2vw;
   }
 
   .horizontal-menu {
@@ -778,12 +786,24 @@ textarea::-webkit-input-placeholder {
     margin-bottom: 50px;
     grid-template-columns: repeat(12, 8.33% [col-start]);
     grid-template-rows: repeat(12, 8.33% [row-start]);
-    background-image: url(images/image-geometry_3.png),
-      url(images/image-geometry_2.png), url(images/image_dots.png),
-      url(images/image-geometry_4.png), url(images/image-geometry_5.png);
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    background-image:
+      url(images/image-geometry_3.png),
+      url(images/image-geometry_2.png),
+      url(images/image_dots.png),
+      url(images/image-geometry_4.png),
+      url(images/image-geometry_5.png);
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
       no-repeat;
-    background-position: 100% 76.7%, 49.95% 44.5%, 25% 98px, 52.7% 84.4%,
+    background-position:
+      100% 76.7%,
+      49.95% 44.5%,
+      25% 98px,
+      52.7% 84.4%,
       0 86.4%;
     background-size: 44.5%, 35.23%, 10%, 6%, 15%;
     padding-top: 100px;
@@ -816,6 +836,11 @@ textarea::-webkit-input-placeholder {
     margin-top: -80px;
     font-size: 40px;
     z-index: 99;
+  }
+
+  .modal-content h3 {
+    font-size: 5vw;
+    margin-left: 5%;
   }
 
   #project1 h3 {
@@ -973,6 +998,7 @@ textarea::-webkit-input-placeholder {
   .modal {
     background-color: #1a2236;
   }
+
   .modal-content {
     display: flex;
     flex-direction: column;
@@ -982,30 +1008,20 @@ textarea::-webkit-input-placeholder {
     margin-top: -2%;
     padding-top: 7%;
     width: 90%;
-    height: fit-content;
   }
 
   .modal-content p {
     margin-left: 20%;
     margin-right: 20%;
   }
-  .modal-content h3 {
-    font-size: 5vw;
-    margin-left: 5%;
-  }
+
   .modalClose img {
     transform: scale(2);
     margin-top: 4%;
     margin-left: -4%;
     position: absolute;
   }
-  .techModal {
-    margin-left: -3%;
-  }
 
-  .techModal li {
-    font-size: 2vw;
-  }
   .modalPreview {
     align-self: center;
     width: 90%;
@@ -1020,7 +1036,6 @@ textarea::-webkit-input-placeholder {
     justify-content: space-around;
     align-items: center;
     width: 22%;
-    height: fit-content;
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 1%;
@@ -1038,6 +1053,7 @@ textarea::-webkit-input-placeholder {
     padding-bottom: 5%;
     padding-top: 5%;
   }
+
   #see-source {
     background-color: #1a2236;
     border: solid 1px #1a2236;
@@ -1048,6 +1064,7 @@ textarea::-webkit-input-placeholder {
     background-repeat: no-repeat;
     background-position: 87% 50%;
   }
+
   #see-source:hover {
     background-color: white;
     border: solid 1px #1a2236;
@@ -1056,9 +1073,11 @@ textarea::-webkit-input-placeholder {
     background-repeat: no-repeat;
     background-position: 87% 50%;
   }
+
   #githubN {
     display: none;
   }
+
   .about {
     display: grid;
     grid-template-columns: repeat(12, 8.33% [col-start]);
@@ -1116,7 +1135,8 @@ textarea::-webkit-input-placeholder {
   }
 
   .get-started {
-    background-image: url(images/image-geometry_6.png),
+    background-image:
+      url(images/image-geometry_6.png),
       url(images/image-geometry_7.png);
     background-position: top left, bottom right;
     background-size: 15%;
@@ -1206,6 +1226,7 @@ textarea::-webkit-input-placeholder {
   .email input {
     width: 254px;
   }
+
   #email-error {
     margin-top: 28%;
   }

@@ -224,7 +224,7 @@ function validateEmail() {
   }
   return true;
 }
-contactForm.addEventListener(‘submit’, (sub) => {
+contactForm.addEventListener('submit', (sub) => {
   if (!validateEmail()) {
     sub.preventDefault();
   }

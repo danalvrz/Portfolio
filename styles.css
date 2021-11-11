@@ -74,9 +74,10 @@ form li {
 
 .mobile-menu a {
   text-decoration: none;
+  color: #1a2236;
 }
 
-.mobile a:visited {
+.mobile-menu a:visited {
   text-decoration: none;
   color: #1a2236;
 }
@@ -105,7 +106,7 @@ section {
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-size: 110px;
+  font-size: 15vw;
   color: #1a2236;
   padding-bottom: 20px;
   padding-left: 16px;
@@ -170,6 +171,10 @@ button:hover {
   border: solid 1px white;
 }
 
+#collab:hover {
+  background-color: #98dede;
+}
+
 #geometry2 {
   align-self: stretch;
   margin: 0;
@@ -181,11 +186,113 @@ button:hover {
   margin-right: 16px;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+  background-color: white;
+  overflow: auto;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6%;
+  margin-right: 6%;
+  padding-top: 3%;
+}
+
+.modal-content li {
+  background-color: white;
+  border: solid 1px #1a2236;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: left;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.modal-content .preview {
+  padding-bottom: 8%;
+}
+
+.modal-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0;
+  text-align: left;
+  padding-top: 5%;
+}
+
+.modal-content button {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  color: #1a2236;
+  border: solid 1px #1a2236;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.modal-content button:hover {
+  background-color: #98dede;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.closeX {
+  margin-left: 93%;
+  padding-top: 30%;
+}
+
+.modal-content h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 6vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #1a2236;
+  padding-bottom: 3%;
+}
+
+.techModal {
+  padding-left: 7.8%;
+}
+
 .works {
   display: grid;
   width: 100%;
   height: auto;
   margin-top: 40px;
+  padding-top: 0;
 }
 
 .subtitle {
@@ -242,9 +349,7 @@ button:hover {
   list-style-type: none;
 }
 
-.see-project,
-#see-project1,
-#see-project2 {
+.see-project {
   display: flex;
   background-color: #1a2236;
   color: white;
@@ -257,6 +362,8 @@ button:hover {
   border: solid 1px white;
   align-items: center;
   padding-left: 6%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .arrow {
@@ -314,7 +421,6 @@ button:hover {
   padding-right: 25px;
 }
 
-.languages-list ul,
 .frameworks-list ul,
 .skills-list ul,
 .languages-list h3,
@@ -324,11 +430,16 @@ button:hover {
   margin-top: -2%;
 }
 
+.languages-list ul {
+  margin-left: -50px;
+}
+
 .skill-subtitle {
   font-weight: 800;
   font-size: 20px;
   margin-bottom: 21px;
   margin-top: 50px;
+  padding-left: -50px;
 }
 
 .languages-list {
@@ -478,11 +589,11 @@ form textarea {
   height: 112px;
   border: solid 1px #dfdfe0;
   border-radius: 4px;
+  padding-left: 10px;
+  padding-top: 13px;
 }
 
 textarea::-webkit-input-placeholder {
-  padding-left: 16px;
-  padding-top: 4px;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -497,11 +608,15 @@ textarea::-webkit-input-placeholder {
 }
 
 .works .laptop:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .submit {
   padding-bottom: 10%;
+}
+
+#submit:hover {
+  background-color: #98dede;
 }
 
 @media (min-width: 992px) {
@@ -516,7 +631,12 @@ textarea::-webkit-input-placeholder {
   header {
     border-bottom: solid 1px #dddfe6;
     justify-content: center;
-    height: 100px;
+    height: 80px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 999;
+    top: 0;
   }
 
   nav {
@@ -532,6 +652,10 @@ textarea::-webkit-input-placeholder {
     width: 79%;
     justify-content: center;
     margin-left: 12%;
+  }
+
+  .techModal li {
+    font-size: 2vw;
   }
 
   .horizontal-menu {
@@ -563,7 +687,7 @@ textarea::-webkit-input-placeholder {
     border-bottom: 2px solid #1a2236;
   }
 
-  .horizontal-menu li button {
+  .horizontal-menu li a {
     font-family: "Poppins", sans-serif;
     font-size: 1.3vw;
     font-style: normal;
@@ -577,18 +701,19 @@ textarea::-webkit-input-placeholder {
     list-style-type: none;
     height: 24px;
     width: 100px;
+    text-decoration: none;
   }
 
   #hello-bttn {
     width: min-content;
   }
 
-  .horizontal-menu li button:hover {
+  .horizontal-menu li a:hover {
     background-color: transparent;
     color: #1a2236;
   }
 
-  .horizontal-menu li button:active {
+  .horizontal-menu li a:active {
     background-color: transparent;
     color: #1a2236;
     transform: scale(1.2);
@@ -599,7 +724,7 @@ textarea::-webkit-input-placeholder {
     width: 50%;
     height: 110%;
     padding-left: 5%;
-    padding-top: 7.62%;
+    padding-top: 7%;
     padding-bottom: 8.5%;
     background-image: url(images/image_dots.png);
     background-repeat: no-repeat;
@@ -625,6 +750,7 @@ textarea::-webkit-input-placeholder {
   .head-desktop {
     display: flex;
     justify-content: flex-end;
+    margin-top: 80px;
   }
 
   #geometry-desktop1 {
@@ -657,8 +783,14 @@ textarea::-webkit-input-placeholder {
       no-repeat,
       no-repeat,
       no-repeat;
-    background-position: 100% 76%, 49.95% 42.72%, 25% 49px, 52.7% 83.9%, 0 85.9%;
+    background-position:
+      100% 76.7%,
+      49.95% 44.5%,
+      25% 98px,
+      52.7% 84.4%,
+      0 86.4%;
     background-size: 44.5%, 35.23%, 10%, 6%, 15%;
+    padding-top: 100px;
   }
 
   #Projects {
@@ -667,7 +799,7 @@ textarea::-webkit-input-placeholder {
     grid-column: 4 / 5;
     grid-row: 1 / 6;
     margin-left: 50px;
-    margin-top: 150px;
+    margin-top: 190px;
     margin-bottom: -50px;
   }
 
@@ -688,6 +820,11 @@ textarea::-webkit-input-placeholder {
     margin-top: -80px;
     font-size: 40px;
     z-index: 99;
+  }
+
+  .modal-content h3 {
+    font-size: 5vw;
+    margin-left: 5%;
   }
 
   #project1 h3 {
@@ -712,7 +849,7 @@ textarea::-webkit-input-placeholder {
     width: 22.55%;
     height: 100%;
     font-size: 1.25vw;
-    padding-bottom: 2%;
+    padding-bottom: 1.5%;
     padding-top: 1.5%;
     padding-left: 1.5%;
   }
@@ -842,6 +979,93 @@ textarea::-webkit-input-placeholder {
     margin-left: -24%;
   }
 
+  .modal {
+    background-color: #1a2236;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 4%;
+    margin-top: -2%;
+    padding-top: 7%;
+    width: 90%;
+  }
+
+  .modal-content p {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .modalClose img {
+    transform: scale(2);
+    margin-top: 4%;
+    margin-left: -4%;
+    position: absolute;
+  }
+
+  .techModal {
+    margin-left: -3%;
+  }
+
+  .modalPreview {
+    align-self: center;
+    width: 90%;
+  }
+
+  .modal-content button {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    color: #1a2236;
+    border: solid 1px #1a2236;
+    justify-content: space-around;
+    align-items: center;
+    width: 22%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 0;
+  }
+
+  .modal-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+    width: 85%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  #see-source {
+    background-color: #1a2236;
+    border: solid 1px #1a2236;
+    color: white;
+    padding-right: 1%;
+    padding-left: 1%;
+    background-image: url(images/github2.svg);
+    background-repeat: no-repeat;
+    background-position: 87% 50%;
+  }
+
+  #see-source:hover {
+    background-color: white;
+    border: solid 1px #1a2236;
+    color: #1a2236;
+    background-image: url(images/github.svg);
+    background-repeat: no-repeat;
+    background-position: 87% 50%;
+  }
+
+  #githubN {
+    display: none;
+  }
+
   .about {
     display: grid;
     grid-template-columns: repeat(12, 8.33% [col-start]);
@@ -850,6 +1074,7 @@ textarea::-webkit-input-placeholder {
     background-repeat: no-repeat;
     background-position: 38.5% 58%;
     background-size: 15%;
+    padding-top: 150px;
   }
 
   .languages-list {
@@ -978,6 +1203,10 @@ textarea::-webkit-input-placeholder {
     font-size: 18px;
   }
 
+  #submit:hover {
+    background-color: #98dede;
+  }
+
   .name input {
     width: 254px;
   }
@@ -990,6 +1219,7 @@ textarea::-webkit-input-placeholder {
   #laptop6,
   #project4,
   #project5,
+  #project6,
   .mobile {
     display: none;
   }

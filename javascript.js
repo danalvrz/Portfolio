@@ -211,7 +211,7 @@ function myModal(clicked_id) {
 
 // Validate contact Form
 
-const contactForm = document.querySelector('.form');
+const contactForm = document.querySelector('#from');
 
 function validateEmail() {
   const emailInput = document.querySelector('#email');

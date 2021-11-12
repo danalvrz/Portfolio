@@ -198,7 +198,7 @@ closeX.onclick = function hideModal() {
 };
 
 function myModal(clicked_id) {
-  const modal = document.getElementById('modal');
+  const modal = document.getElementById('.modal');
   if (modal.style.display === 'block') {
     modal.style.display = 'none';
     navMenu.style.display = 'block';
@@ -211,7 +211,7 @@ function myModal(clicked_id) {
 
 // Validate contact Form
 
-const contactForm = document.querySelector('#form');
+const contactForm = document.querySelector('.form');
 
 function validateEmail() {
   const emailInput = document.querySelector('#email');

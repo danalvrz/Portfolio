@@ -239,7 +239,7 @@ const textInput = document.getElementById('textarea');
 function storeForm() {
   const data = {
     name: nameInput.value,
-    email: emailInput.value, 
+    email: emailInput.value,
     text: textInput.value,
   };
   localStorage.setItem('data', JSON.stringify(data));
@@ -255,3 +255,10 @@ textInput.addEventListener('input', () => {
   storeForm();
 });
 
+window.addEventListener('load', () => {
+  const windowData = localStorage.getItem('data');
+  const parseWindow = JSON.parse(windowData);
+  nameInput.value = parseWindow.name;
+  emailInput.value = parseWindow.email;
+  textInput.value = parseWindow.text;
+});

@@ -611,8 +611,20 @@ textarea::-webkit-input-placeholder {
   transform: scale(1.01);
 }
 
+#email-error {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  justify-self: center;
+  position: absolute;
+  text-align: center;
+}
+
 .submit {
   padding-bottom: 10%;
+  margin-top: 10%;
 }
 
 #submit:hover {
@@ -652,6 +664,10 @@ textarea::-webkit-input-placeholder {
     width: 79%;
     justify-content: center;
     margin-left: 12%;
+  }
+
+  .techModal {
+    margin-left: -3%;
   }
 
   .techModal li {
@@ -1006,10 +1022,6 @@ textarea::-webkit-input-placeholder {
     position: absolute;
   }
 
-  .techModal {
-    margin-left: -3%;
-  }
-
   .modalPreview {
     align-self: center;
     width: 90%;
@@ -1213,6 +1225,10 @@ textarea::-webkit-input-placeholder {
 
   .email input {
     width: 254px;
+  }
+
+  #email-error {
+    margin-top: 28%;
   }
 
   #project3,

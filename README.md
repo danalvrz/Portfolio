@@ -1,6 +1,6 @@
 # Portfolio
 
-This is my portfolio project for Microverse.
+An example of a professional website to display your best work.
 
 ![screenshot](/images/screen_shot.png)
 
